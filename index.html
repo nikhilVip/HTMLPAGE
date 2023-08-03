@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body  background="photo3.jpg">
+    <h1 class="form-heading">WILL FORM</h1>
+
+    <audio autoplay loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <form action =" https://formspree.io/f/xrgwerda" method=post id="form">
+    <form  action="/submit" method="post">
+        
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+
+            <textarea id="message" name="message" rows="5" cols="50" required></textarea><br><br>
+
+            
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="others" name="gender" value="others" >
+    <label for="others">Others</label>
+    <br><br>
+   
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+        <option value="india">India</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="other">Other</option>
+    </select><br><br>
+     
+    <label for="subscribe">Subscribe:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Yes, I want to receive updates via email</label><br><br>
+    
+    <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
